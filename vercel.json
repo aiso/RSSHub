@@ -8,6 +8,7 @@
             "destination": "/favicon.png"
         }
     ],
+    "installCommand": "pnpm install --no-frozen-lockfile",
     "github": {
         "silent": true
     }
