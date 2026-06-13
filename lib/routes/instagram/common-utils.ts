@@ -34,7 +34,7 @@ const renderItems = (items) =>
                 const chosenVideo=sortedVideos[0]||item.video_versions[0];
                 description=renderVideo(
                     summary,
-                    image:item.image_versions2.candidates.toSorted(a,b)=>b.width-a.width)[0].url,
+                    image:item.image_versions2.candidates.toSorted((a,b)=>b.width-a.width)[0].url,
                     video:chosenVideo,
                 });
                 break;
