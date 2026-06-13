@@ -24,7 +24,7 @@ const renderItems = (items) =>
             }
             case 'clips':
             case 'igtv':{
-                const sortedVideos=item.video_versions.filter(v=>v.height<=720).sort((a,b)=>b.height-a.height);
+                const sortedVideos=item.video_versions.filter(v=>v.type===101 && v.height<=720).sort((a,b)=>b.height-a.height);
                 const chosenVideo=sortedVideos[0]||item.video_versions[0];
                 description=renderVideo({
                     summary,
