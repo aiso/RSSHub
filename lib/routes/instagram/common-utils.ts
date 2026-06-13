@@ -27,7 +27,7 @@ const renderItems = (items) =>
                 description = renderVideo({
                     summary,
                     image: item.image_versions2.candidates.toSorted((a, b) => b.width - a.width)[0].url,
-                    video: item.video_versions[0],
+                    video: item.video_versions[item.video_versions.length-1],
                 });
                 break;
             case 'feed': {
